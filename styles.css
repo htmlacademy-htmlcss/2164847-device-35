@@ -42,8 +42,6 @@ section {
   align-items: center;
   text-align: right;
 
-  /* basic/white */
-
   color: #ffffff;
   position: absolute;
   bottom: 0;
@@ -78,9 +76,12 @@ section {
   background: #444444;
 }
 .delivery {
-  display: grid;
+ position: relative;
+}
+.delivery .container {
+    display: grid;
   grid-template-columns: 1fr 3fr;
-  position: relative;
+
 }
 .delivery::after {
   content: " ";
@@ -112,8 +113,6 @@ section {
 
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
-  /* basic/black */
 
   color: #000000;
 }
@@ -173,11 +172,8 @@ section {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-  /* or 133% */
 
   letter-spacing: -0.02em;
-
-  /* basic/black */
 
   color: #000000;
   text-decoration: none;
@@ -213,8 +209,6 @@ section {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 
-  /* basic/black */
-
   color: #000000;
 }
 .more_detailed {
@@ -246,7 +240,7 @@ section {
   text-decoration: none;
   color: #000000;
 }
-/*  */
+
 .more_about_us {
   font-family: "Raleway";
   font-style: normal;
@@ -421,9 +415,6 @@ section {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  /* or 100% */
-
-  /* basic/black */
 
   color: #000000;
 }
@@ -434,9 +425,6 @@ section {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 60px;
-  /* or 167% */
-
-  /* basic/dark */
 
   color: #444444;
 }
@@ -449,8 +437,6 @@ section {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
-  /* basic/black */
 
   color: #000000;
   position: relative;
@@ -476,9 +462,6 @@ section {
   font-size: 36px;
   line-height: 30px;
   margin-left: 0;
-  /* identical to box height, or 83% */
-
-  /* basic/black */
 }
 .information {
   display: flex;
@@ -523,7 +506,7 @@ section {
 }
 .slider-dots {
   display: flex;
-
+list-style-type: none;
   justify-content: center;
 }
 .footer__logo {
@@ -673,8 +656,6 @@ section {
   margin-top: 70px;
 }
 .information-content__title {
-  /* Main Title */
-
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
@@ -707,6 +688,8 @@ section {
   color: #444444;
 }
 .list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 .list > li::before {
@@ -1084,4 +1067,7 @@ section {
 }
 .cards {
   margin-bottom: 70px;
+}
+.cards {
+  list-style-type: none;
 }

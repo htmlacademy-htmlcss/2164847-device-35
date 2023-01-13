@@ -42,9 +42,9 @@
           </div>
 
           <ul class="navigation">
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Контакты</li>
+            <li class="navigation__item">Доставка</li>
+            <li class="navigation__item">Гарантия</li>
+            <li class="navigation__item">Контакты</li>
           </ul>
         </div>
       </div>
@@ -74,24 +74,30 @@
           <div class="information">
             <dl class="information__item">
               <dt class="metr">800 м</dt>
-              <dd>Дальность полета</dd>
+              <dd class="info-description">Дальность полета</dd>
             </dl>
             <div>
               <dl>
                 <dt class="metr">50 м</dt>
-                <dd>Радиус поражения</dd>
+                <dd class="info-description">Радиус поражения</dd>
               </dl>
             </div>
           </div>
         </div>
       </section>
-      <div class="slider-dots">
-        <button class="dot active"></button>
-        <button class="dot"></button>
-        <button class="dot"></button>
-      </div>
-      <section class="cards container">
-        <div>
+      <ul class="slider-dots">
+        <li>
+          <button class="dot active"></button>
+        </li>
+        <li>
+          <button class="dot"></button>
+        </li>
+        <li>
+          <button class="dot"></button>
+        </li>
+      </ul>
+      <ul class="cards container">
+        <li>
           <div class="box">
             <img src="./images/glasses.svg" alt="Очки" />
           </div>
@@ -99,8 +105,8 @@
             >Виртуальная<br />
             реальность</a
           >
-        </div>
-        <div>
+        </li>
+        <li>
           <div class="box">
             <img src="./images/selfie-stick.svg" alt="селфи" />
           </div>
@@ -108,56 +114,55 @@
             >Моноподы <br />
             для селфи</a
           >
-        </div>
-        <div>
+        </li>
+        <li>
           <div class="box">
             <img src="./images/camera.svg" alt="Камера" />
           </div>
           <a href="#" class="card__title">Экшн-камеры</a>
-        </div>
-        <div>
+        </li>
+        <li>
           <div class="box">
             <img src="./images/bracelet.svg" alt="Браслет" />
           </div>
           <a href="#" class="card__title">Фитнес-браслеты</a>
-        </div>
-        <div>
+        </li>
+        <li>
           <div class="box">
             <img src="./images/watch.svg" alt="Часы" />
           </div>
           <a href="#" class="card__title">Умные часы</a>
-        </div>
-        <div>
+        </li>
+        <li>
           <div class="box">
             <img src="./images/quadrocopter.svg" alt="квадрокоптер" />
           </div>
           <a href="#" class="card__title">Квадрокоптеры</a>
-        </div>
-      </section>
-      <section>
+        </li>
+      </ul>
+      <div class="delivery">
         <div class="container">
-          <div class="delivery">
-            <div>
-              <ul class="tabs">
-                <li class="active">Доставка</li>
-                <li>Гарантия</li>
-                <li>Кредит</li>
-              </ul>
+          <div>
+            <ul class="tabs">
+              <li class="active tabs__item">Доставка</li>
+              <li class="tabs__item">Гарантия</li>
+              <li class="tabs__item">Кредит</li>
+            </ul>
+          </div>
+          <div class="delivery__content">
+            <div class="delivery-block">
+              <h2 class="delivery__title">Доставка</h2>
+              <p class="delivery-of-goods">
+                Мы с удовольствием доставим ваш товар прямо <br />
+                к вашему подъезду совершенно бесплатно! Ведь<br />
+                мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
             </div>
-            <div class="delivery__content">
-              <div class="delivery-block">
-                <h2 class="delivery__title">Доставка</h2>
-                <p class="delivery-of-goods">
-                  Мы с удовольствием доставим ваш товар прямо <br />
-                  к вашему подъезду совершенно бесплатно! Ведь<br />
-                  мы неплохо заработаем, поднимая его на ваш этаж.
-                </p>
-              </div>
-              <img src="./images/delivery.svg" alt="Доставка" class="courier" />
-            </div>
+            <img src="./images/delivery.svg" alt="Доставка" class="courier" />
           </div>
         </div>
-      </section>
+      </div>
+
       <section class="container">
         <div class="product">
           <img src="./images/car.svg" alt="Машинка" class="car" />
@@ -178,13 +183,13 @@
                 транспортными компаниями:
               </p>
               <ul class="list">
-                <li>Меловые линии</li>
-                <li>СДИК</li>
-                <li>ТоксБерри</li>
+                <li class="list__item">Меловые линии</li>
+                <li class="list__item">СДИК</li>
+                <li class="list__item">ТоксБерри</li>
               </ul>
               <a href="#" class="more_about_us">Подробнее о нас</a>
             </div>
-            <div>
+            <div class="contacts">
               <h2 class="information-content__title">Контакты</h2>
               <p class="information-content__paragraph">
                 Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
@@ -225,6 +230,7 @@
           <div class="subscribe__form">
             <form action="/" class="subscribe__action">
               <input
+                required
                 type="text"
                 placeholder="Ваш e-mail"
                 class="subscribe__input"
@@ -405,9 +411,7 @@
               </button>
             </div>
           </div>
-          <button class="send" type="submit">
-            отправить
-          </button>
+          <button class="send" type="submit">отправить</button>
         </form>
       </div>
     </div>
