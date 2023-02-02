@@ -8,23 +8,32 @@
   <body>
     <header class="header">
       <div class="container">
-        <img
-          src="./images/logo.svg"
-          alt="Логотип"
-          class="header__logo"
-          width="145"
-          height="36"
-        />
+        <a href="/">
+          <img
+            src="./images/logo.svg"
+            alt="Логотип"
+            class="header__logo"
+            width="145"
+            height="36"
+          />
+        </a>
         <div class="header-nav">
           <div class="search-form__wrapper">
             <form action="https://echo.htmlacademy.ru" class="search-form">
               <input
                 name="query"
                 type="text"
+                aria-label="Поиск по сайту"
                 placeholder="Поиск по сайту"
                 class="site-search"
               />
-              <button type="submit" class="find">Найти</button>
+              <div class="square"></div>
+
+              <button type="submit" class="find">
+                Найти
+                <div class="square"></div>
+              </button>
+              
             </form>
             <a href="#" class="login login2">
               <img
@@ -37,7 +46,7 @@
             </a>
           </div>
           <a href="#" class="login">
-            <img
+            <imgs
               src="./images/compare.svg"
               alt="Сравнить"
               width="10"
@@ -125,91 +134,114 @@
       </section>
       <ul class="slider-dots">
         <li>
-          <button class="dot active"></button>
+          <button class="dot active" type="button"></button>
         </li>
         <li>
-          <button class="dot"></button>
+          <button class="dot" type="button"></button>
         </li>
         <li>
-          <button class="dot"></button>
+          <button class="dot" type="button"></button>
         </li>
       </ul>
       <ul class="cards container">
         <li>
-          <div class="box">
-            <img
-              src="./images/glasses.svg"
-              alt="Очки"
-              width="160"
-              height="160"
-            />
-          </div>
-          <a href="#" class="card__title"
-            >Виртуальная<br />
-            реальность</a
-          >
+          <a href="#" class="card">
+            <div class="box">
+              <img
+                src="./images/glasses.svg"
+                alt="Очки"
+                width="160"
+                height="160"
+              />
+            </div>
+            <div class="card__title">
+              Виртуальная<br />
+              реальность
+            </div>
+          </a>
         </li>
         <li>
-          <div class="box">
-            <img
-              src="./images/selfie-stick.svg"
-              alt="селфи"
-              width="160"
-              height="160"
-            />
-          </div>
-          <a href="#" class="card__title"
-            >Моноподы <br />
-            для селфи</a
-          >
+          <a href="#" class="card">
+            <div class="box">
+              <img
+                src="./images/selfie-stick.svg"
+                alt="селфи"
+                width="160"
+                height="160"
+              />
+            </div>
+            <div class="card__title">
+              Моноподы <br />
+              для селфи
+            </div>
+          </a>
         </li>
         <li>
-          <div class="box">
-            <img
-              src="./images/camera.svg"
-              alt="Камера"
-              width="160"
-              height="160"
-            />
-          </div>
-          <a href="#" class="card__title">Экшн-камеры</a>
+          <a href="#" class="card">
+            <div class="box">
+              <img
+                src="./images/camera.svg"
+                alt="Камера"
+                width="160"
+                height="160"
+              />
+            </div>
+            <div class="card__title">Экшн-камеры</div>
+          </a>
         </li>
         <li>
-          <div class="box">
-            <img
-              src="./images/bracelet.svg"
-              alt="Браслет"
-              width="160"
-              height="160"
-            />
-          </div>
-          <a href="#" class="card__title">Фитнес-браслеты</a>
+          <a href="#" class="card">
+            <div class="box">
+              <img
+                src="./images/bracelet.svg"
+                alt="Браслет"
+                width="160"
+                height="160"
+              />
+            </div>
+            <div class="card__title">Фитнес-браслеты</div>
+          </a>
         </li>
         <li>
-          <div class="box">
-            <img src="./images/watch.svg" alt="Часы" width="160" height="160" />
-          </div>
-          <a href="#" class="card__title">Умные часы</a>
+          <a href="#" class="card">
+            <div class="box">
+              <img
+                src="./images/watch.svg"
+                alt="Часы"
+                width="160"
+                height="160"
+              />
+            </div>
+            <div class="card__title">Умные часы</div>
+          </a>
         </li>
         <li>
-          <div class="box">
-            <img
-              src="./images/quadrocopter.svg"
-              alt="квадрокоптер"
-              width="160"
-              height="160"
-            />
-          </div>
-          <a href="#" class="card__title">Квадрокоптеры</a>
+          <a href="#" class="card">
+            <div class="box">
+                <img
+                  src="./images/quadrocopter.svg"
+                  alt="квадрокоптер"
+                  width="160"
+                  height="160"
+                />
+            </div>
+            <div class="card__title">Квадрокоптеры</div>
+          </a>
         </li>
       </ul>
       <div class="delivery">
         <div class="container">
           <div>
             <ul class="tabs">
-              <li class="active tabs__item">Доставка</li>
-              <li class="tabs__item">Гарантия</li>
-              <li class="tabs__item">Кредит</li>
+              <li class="active tabs__item" tabindex="0">
+                <button>Доставка</button>
+              </li>
+              <li class="tabs__item"  tabindex="0">
+                <button>Гарантия</button>
+              </li>
+              <li class="tabs__item"  tabindex="0">
+                <button>Кредит</button>
+              </li>
             </ul>
           </div>
           <div class="delivery__content">
@@ -232,8 +264,8 @@
         </div>
       </div>
 
-      <section class="container">
-        <div class="product">
+      <section class="container delivery__banner">
+        <a href="#" class="product">
           <img
             src="./images/car.svg"
             alt="Машинка"
@@ -242,7 +274,7 @@
             height="31"
           />
           <p>Доставим редкий товар под заказ</p>
-        </div>
+        </a>
       </section>
       <section class="section__information">
         <div class="container">
@@ -311,6 +343,7 @@
                 required
                 type="text"
                 name="email"
+                aria-label="Ваш e-mail"
                 placeholder="Ваш e-mail"
                 class="subscribe__input"
               />
@@ -362,7 +395,7 @@
             </ul>
             <ul class="socials">
               <li>
-                <a href="#" class="social">
+                <a href="#" class="social" aria-label="Telegram">
                   <svg
                     width="14"
                     height="12"
@@ -378,7 +411,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="social">
+                <a href="#" class="social" aria-label="Youtube">
                   <svg
                     width="16"
                     height="11"
@@ -394,7 +427,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="social">
+                <a href="#" class="social" aria-label="Twitter">
                   <svg
                     width="15"
                     height="15"
@@ -415,13 +448,15 @@
             <a href="tel:+78128121212" class="footer__phone">
               Тел.: +7 (812) 812-12-12
             </a>
-            <img
-              src="./images/html-logo.svg"
-              width="115"
-              height="33"
-              alt="html логотип"
-              class="logotip"
-            />
+            <a href="#">
+              <img
+                src="./images/html-logo.svg"
+                width="115"
+                height="33"
+                alt="html логотип"
+                class="logotip"
+              />
+            </a>
           </div>
         </div>
       </div>
